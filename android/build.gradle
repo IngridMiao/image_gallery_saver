@@ -38,6 +38,17 @@ android {
     lintOptions {
         disable 'InvalidPackage'
     }
+    // Java 編譯器使用 JDK 17
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    // Kotlin 編譯器使用 JDK 17
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
 }
 
 dependencies {
